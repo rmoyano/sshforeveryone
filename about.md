@@ -1,9 +1,9 @@
 SSH for everyone.
 =======
-### Suite SSH tutorial.
+## SSH (Secure Shell) tutorial.
 
-###Objectives
-These work is a draft in continous development, the original idea was to serve as a guide using SSH and their related tools. With the passage of time and a lot a patience, I will be writing new chapters until we get a complete guide.
+###Purpose
+These work is a draft in continous development, the original idea was to serve as a guide using SSH protocol and their related tools because I could not find a comprehensive tutorial. With the passage of time and a lot a patience, I will be writing new chapters until we get a complete guide.
 
 ###How to contrib?
 - Creating a new discussion [discusión](https://www.gitbook.com/book/rmoyano/sshforeveryone/discussions), first you need to sign-up in Gitbook o log-in using Facebook, Github, Google o Twitter account. 

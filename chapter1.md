@@ -1,60 +1,49 @@
-#SSH 
+# What is SSH? 
 
-SSH is a protocol.
+SSH (Secure Shell) is a protocol designed to be a replacement for old plain text protocols like Telnet.
 With the increase o
 
-OpenSSH is the open implementation of this protocol and it is distributed under a BSD license.
-
-
-Para poder iniciarse en la programación en Haskell, proponemos que su estudio como las pruebas que 
-se consideren necesarias, se realicen en los equipos particulares. Por lo tanto se hace necesario 
-descargar e instalar el conjunto de librerías, ambiente interactivo y compilador correspondiente.
-Dentro de los proyetos de software libre disponibles, la cátedra ha elegido una de las distribuciones
-más activas de la comunidad de programación llamada Glasgow Haskell Compiler (GHC). 
-Mas precisamente, al hacer referencia a *GHC*, debemos relacionarlo con un compilador optimizado para 
-generar código nativo y *GHCi*, hace referencia al ambiente y depurador interactivo.
+OpenSSH is the open implementation of this protocol created by the same developers of the OpenBSD project. 
+That is why it is distributed under a BSD license and follows the same principles with the security on concern.
 
 ##Testing environment##
-In the examples we will be using the following especifications:
-- Operative System: Debian GNU/Linux 8.6 (Jessy stable).
-- OpenSSH client version: 1:6.7p1-5+deb8u3
+In the examples we will be using the following software versions:
+- Operative system: Debian GNU/Linux 8.6 Jessy (Stable).
+- OpenSSH client: 1:6.7p1-5+deb8u3
 
 ##Installation##
 
 ##GNU/Linux
-For Debian OS, SSH client installation wila instalación de Haskell se realizará en la distribución Debian
-que dispone del gestor de paquetes APT. In distribuciones derivadas like Ubuntu, 
-Trisquel, Linux Mint, etc. the procedure is very similar and should be pretty straightforward.
-For other distributions like Centos, Fedora, Mageia, etc. the procedure could be similar but
-it fits to their owns package managers.
+For Debian OS, SSH client is installed by default but if that is not the case, we will use Debian's package
+manager called APT. In Debian based distributions like Ubuntu, Trisquel, Linux Mint, etc. the procedure is 
+very similar and should be pretty straightforward.
+For other distributions like Centos, Fedora, Mageia, Gentoo, etc. the procedure could be similar but
+you will need to use their owns package managers (RPM, Portage, etc.).
 
 ###Steps:
 
-1. Configurar las fuentes del gestor de paquetes (APT) editando el archivo sources.list:
+1. Set-up Debian mirrors in sources.list file:
 ```bash
 # vi /etc/apt/sources.list
 ```
-2. Agregar alguno de los repositorios de Argentina:
+2. Add one mirror that is located close to your city or country :
 ```bash
    deb http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
    deb-src http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
 ```
-3. Actualizar el índice de paquetes para verificar que se tiene conectividad con el repositorio de Debian:
+3. Update the package index in order to verify that the Debian mirrors are online:
 ```bash
    # apt-get update
 ```
-4. Buscar los paquetes de GHC (Glasgow Haskell Compiler): 
+4. Search for ssh client: 
 ```bash
-   # apt-cache search glasgow
-   bnfc - Compiler front-end generator based on Labelled BNF
-   ghc - The Glasgow Haskell Compilation system
-   ghc-doc - Documentation for the Glasgow Haskell Compilation system
-   ghc-dynamic - Dynamic libraries for the Glasgow Haskell Compilation system
-   ghc-prof - Profiling libraries for the Glasgow Haskell Compilation system
+   # apt-cache search ssh-client
+   openssh-client - secure shell (SSH) client, for secure access to remote machines
+   ssh-askpass-gnome - interactive X program to prompt users for a passphrase for ssh-add
 ```
-5. Instalar las librerías y sus respectivas dependencias:
+5. Install the client and their dependences:
 ```ShellSession
-   # apt-get install ghc
+   # apt-get install ssh-client
    Leyendo lista de paquetes... Hecho
    Creando árbol de dependencias       
    Leyendo la información de estado... Hecho
@@ -76,8 +65,8 @@ it fits to their owns package managers.
    Se utilizarán 384 MB de espacio de disco adicional después de esta operación.
    ¿Desea continuar? [S/n]
 ```
-6. Para verificar la instalación exitosa, abra una consola y ejecute el ambiente interativo de Haskell:
+6. Open the shell and execute the following command to check if it is installed:
 ```Shell
-   $ ghci
-   Prelude>
+   $ ssh -V
+   OpenSSH_6.7p1 Debian-5+deb8u3, OpenSSL 1.0.1t  3 May 2016
 ```
