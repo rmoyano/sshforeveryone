@@ -14,6 +14,5 @@ These work is a draft in continous evolution, the origin was to serve as a guide
 ###¿Who am I?
 My name is Rafael O. Moyano Vega Aciar, I'm Systems Engineer and passionate about software libre. 
 
-###Licencia
+###Licence
 This project is publicated under the licence [GPL V3.0](http://www.gnu.org/licenses/gpl-3.0.html "Licence"), so all yours contributions are welcome.
-
