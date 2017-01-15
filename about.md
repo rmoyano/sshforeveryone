@@ -1,6 +1,6 @@
-SSH tutorial.
+SSH for everyone.
 =======
-### Documentation project for the SSH suite tool.
+### Suite SSH tutorial.
 
 ###Objectives
 These work is a draft in continous development, the original idea was to serve as a guide using SSH and their related tools. With the passage of time and a lot a patience, I will be writing new chapters until we get a complete guide.
@@ -15,4 +15,4 @@ These work is a draft in continous development, the original idea was to serve a
 My name is Rafael O. Moyano Vega Aciar, I'm Systems Engineer and passionate about software libre. 
 
 ###License
-This project is publicated under the license [CC BY-NC-SA V4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode "License"), so all yours contributions are welcome.
+This project is licensed under the terms of the [CC BY-NC-SA V4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode "License"), so all yours contributions are welcome.
