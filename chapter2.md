@@ -4,6 +4,7 @@
 For Debian OS, SSH client is installed by default but if that is not the case, we will use Debian's package
 manager called APT. In Debian based distributions like Ubuntu, Trisquel, Linux Mint, etc. the procedure is 
 very similar and should be pretty straightforward.
+
 For other distributions like Centos, Fedora, Mageia, Gentoo, etc. the procedure could be similar but
 you will need to use their owns package managers (RPM, Portage, etc.).
 

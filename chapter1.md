@@ -7,16 +7,16 @@ OpenSSH is the open implementation of this protocol created by the same develope
 That is why it is distributed under a BSD license and follows the same principles with the security on concern.
 
 ##Tools
--ssh(1) - The basic rlogin/rsh-like client program
--sshd(8) - The daemon that permits you to log in
--ssh-agent(1) - An authentication agent that can store private keys
--ssh-add(1) - Tool which adds keys to in the above agent
--sftp(1) - FTP-like program that works over SSH1 and SSH2 protocol
--scp(1) - File copy program that acts like rcp
--ssh-keygen(1) - Key generation tool
--sftp-server(8) - SFTP server subsystem (started automatically by sshd)
--ssh-keyscan(1) - Utility for gathering public host keys from a number of hosts
--ssh-keysign(8) - Helper program for host-based authentication
+- ssh(1) - The basic rlogin/rsh-like client program
+- sshd(8) - The daemon that permits you to log in
+- ssh-agent(1) - An authentication agent that can store private keys
+- ssh-add(1) - Tool which adds keys to in the above agent
+- sftp(1) - FTP-like program that works over SSH1 and SSH2 protocol
+- scp(1) - File copy program that acts like rcp
+- ssh-keygen(1) - Key generation tool
+- sftp-server(8) - SFTP server subsystem (started automatically by sshd)
+- ssh-keyscan(1) - Utility for gathering public host keys from a number of hosts
+- ssh-keysign(8) - Helper program for host-based authentication
 
 
 ##Testing environment##
