@@ -1,12 +1,27 @@
 # What is SSH? 
 
-*SSH* (Secure Shell) is a secure protocol for operating networks services securely over unsecured networks. 
-It was designed as a replacement for old protocols like Telnet, rlogin, rsh, etc.
+*SSH* (Secure Shell) is a secure protocol for operating networks services securely over unsecured 
+networks. It was designed as a replacement for old protocols like Telnet, rlogin, rsh, etc.
+These network protocols allows us to remote logging in to a computer from another computer, over a network.
+The main problem with these old protocols is that all the traffic travels in plain text with all the security 
+issues that could be involved.
+
+Unix and GNU/Linux operating systems, usually present a command-line interface to the user (The shell), 
+much like the *Command Prompt* in Windows. The system prints a prompt, and you type commands which the 
+system will execute.
+
+Using the shell, there is no need for you to be sitting at the same machine you are typing 
+commands to. The commands, and responses, can be sent over a network, so you can sit at one computer and 
+give commands to another one, or even to more than one. On the computer you sit at, you run a client, 
+which makes a network connection to the other computer (The server). 
+Once the network connection is stablished, all the traffic travels encrypted through the network. Carries your 
+commands from the client to the server, and carries the server's responses back to you.
 
 ##OpenSSH
-[OpenSSH](https://www.openssh.com/ "OpenSSH") is a fork of the original project. It is the open implementation 
-of this protocol and the tools created and maintained by the same developers of the OpenBSD project. That is why 
-it is distributed under a BSD license and follows the same principles with the focus on security.
+[OpenSSH](https://www.openssh.com/ "OpenSSH") is a fork of the original project *free ssh 1.2.12* release from 
+Tatu Ylönen. It is the open implementation of this protocol and tools designed and maintained by the same developers 
+of the OpenBSD project. That is why it is distributed under a BSD license and follows the same principles with the 
+focus on security.
 
 Last version *7.4* was released December 19, 2016.
 
@@ -34,13 +49,4 @@ In the examples we will be using the following software versions:
 1. Set-up Debian mirrors in sources.list file:
 ```bash
 # vi /etc/apt/sources.list
-```
-2. Add one mirror that is located close to your city or country :
-```bash
-   deb http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
-   deb-src http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
-```
-3. Update the package index in order to verify that the Debian mirrors are online:
-```bash
-   # apt-get update
 ```

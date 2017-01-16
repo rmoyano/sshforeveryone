@@ -51,15 +51,22 @@ you will need to use their owns package managers (RPM, Portage, etc.).
 ```
 
 ##Microsoft Windows
-The most famous and widely used SSH client for Windows is Putty. PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms. 
+The most famous and widely used SSH client for Windows is Putty. PuTTY is a free implementation of SSH and 
+Telnet for Windows. 
 
 ###Steps:
-1. Go to Putty project page:
-```bash
-# vi /etc/apt/sources.list
-```
-2. Click on Download section:
-```bash
-   deb http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
-   deb-src http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
-```
+1. Go to official [PuTTY's](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "PuTTY") project page.
+
+2. Click on [Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html "Download") section.
+   
+3. In the *Binaries* section you have different download options. I think the best option for this case is to choose 
+the MSI installer package, because you get all the tools that we will use: [(Minimal installers)](https://www.haskell.org/downloads#minimal) por lo que hacemos click en el enlace a esa sección.
+
+   ![Binaries.](/images/binaries.png "Binaries")
+
+4. Select [MSI installer](https://github.com/fpco/minghc#using-the-installer) and choose to save the file: 
+
+   ![Binaries.](/images/msi_installer.png "MSI installer")
+                  
+5. Once the download has finished, execute the installer and click *Next* an infinite number of times until 
+   you complete the installation. 
