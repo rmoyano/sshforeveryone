@@ -49,3 +49,17 @@ you will need to use their owns package managers (RPM, Portage, etc.).
    $ ssh -V
    OpenSSH_6.7p1 Debian-5+deb8u3, OpenSSL 1.0.1t  3 May 2016
 ```
+
+##Microsoft Windows
+The most famous and widely used SSH client for Windows is Putty. PuTTY is a free implementation of SSH and Telnet for Windows and Unix platforms. 
+
+###Steps:
+1. Go to Putty project page:
+```bash
+# vi /etc/apt/sources.list
+```
+2. Click on Download section:
+```bash
+   deb http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
+   deb-src http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
+```
