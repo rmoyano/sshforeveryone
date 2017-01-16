@@ -66,7 +66,7 @@ the MSI installer package, because you get all the tools that we will use: [(Min
 
 4. Select [MSI installer](https://github.com/fpco/minghc#using-the-installer) and choose to save the file: 
 
-   ![Binaries.](/images/msi_installer.png "MSI installer")
+   ![MSI installer.](/images/msi_installer.png "MSI installer")
                   
 5. Once the download has finished, execute the installer and click *Next* an infinite number of times until 
    you complete the installation. 
