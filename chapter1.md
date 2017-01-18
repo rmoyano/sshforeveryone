@@ -40,5 +40,5 @@ This is the list of tools that we are going to use on this guide:
 
 ##Testing environment##
 In the examples we will be using the following software versions:
-- *Operative system*: Debian GNU/Linux 8.6 Jessy (Stable).
+- *Operative system*: Debian GNU/Linux 8.6 Jessie (Stable).
 - *OpenSSH client*: 1:6.7p1-5+deb8u3

@@ -1,4 +1,9 @@
 # SSH client installation
+Firstly, we need the software installed in order to start the tests. SSH follows a client-server 
+architecture, so we need a client installed in one computer and the daemon waiting for 
+connections on other machine that is working as server.     
+
+   ![Architecture.](/images/client-server.png "Client-server")
 
 ##GNU/Linux
 For Debian OS, SSH client is installed by default but if that is not the case, we will use Debian's package
@@ -12,9 +17,9 @@ you will need to use their owns package managers (RPM, Portage, etc.).
 
 1. Set-up Debian mirrors in sources.list file:
 ```bash
-# vi /etc/apt/sources.list
+   # vi /etc/apt/sources.list
 ```
-2. Add one mirror that is located close to your city or country :
+2. Add one mirror that is located close to your city or country:
 ```bash
    deb http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
    deb-src http://mirrors.dcarsat.com.ar/debian/ stable main contrib non-free
@@ -23,25 +28,28 @@ you will need to use their owns package managers (RPM, Portage, etc.).
 ```bash
    # apt-get update
 ```
-4. Search for ssh client: 
+4. Search for ssh client and server: 
 ```bash
    # apt-cache search ssh-client
    openssh-client - secure shell (SSH) client, for secure access to remote machines
+   openssh-server - secure shell(SSH) server, for secure access from remote machines
    ssh-askpass-gnome - interactive X program to prompt users for a passphrase for ssh-add
 ```
-5. Install the client and their dependences:
+5. Install the software with their dependences:
 ```ShellSession
-   # apt-get install ssh-client
+   # apt-get install oepnssh-client openssh-server
    Reading package lists... Done
    Builduing dependency tree       
    Reading state information... Done
+   The following extra packages will be installed:
+   openssh-sftp-server
    Suggested packages:
-       openshh-server
+       ssh-askpass rssh molly-guard ufw monkeysphere
    The following new packages will be installed:
-       openssh-client 
-   0 upgraded, 1 newly installed, 0 to remove y 23 not upgraded.
+       openssh-client openssh-server openssh-sftp-server
+   0 upgraded, 2 newly installed, 0 to remove y 23 not upgraded.
    Need to get 878kB of files.
-   After this operation, 810kB of additional disk space will be used.
+   After this operation, 1810kB of additional disk space will be used.
    ¿Do you wanto to continue? [Y/n]Y
 ```
 6. Open the shell and execute the following command to check if it is installed:
@@ -60,13 +68,13 @@ Telnet for Windows.
 2. Click on [Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html "Download") section.
    
 3. In the *Binaries* section you have different download options. I think the best option for this case is to choose 
-the MSI installer package, because you get all the tools that we will use: [(Minimal installers)](https://www.haskell.org/downloads#minimal) por lo que hacemos click en el enlace a esa sección.
+the MSI installer package, because you get all the tools that we will use:
 
    ![Binaries.](/images/binaries.png "Binaries")
 
-4. Select [MSI installer](https://github.com/fpco/minghc#using-the-installer) and choose to save the file: 
+4. Select [MSI installer](https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi) and choose to save the file: 
 
    ![MSI installer.](/images/msi_installer.png "MSI installer")
                   
-5. Once the download has finished, execute the installer and click *Next* an infinite number of times until 
-   you complete the installation. 
+5. Once the download has finished, execute the installer and click *Next* button an infinite number of times until 
+   you complete the installation.
