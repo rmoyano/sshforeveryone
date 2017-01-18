@@ -10,15 +10,14 @@ Unix and GNU/Linux operating systems, usually present a command-line interface t
 much like the *Command Prompt* in Windows. The system prints a prompt, and you type commands which the 
 system will execute.
 
-Using the shell, there is no need for you to be sitting at the same machine you are typing 
-commands to. The commands, and responses, can be sent over a network, so you can sit at one computer and 
-give commands to another one, or even to more than one. On the computer you sit at, you run a client, 
-which makes a network connection to the other computer (The server). 
-Once the network connection is stablished, all the traffic travels encrypted through the network. Carries your 
-commands from the client to the server, and carries the server's responses back to you.
+Using the shell and having the right user access levels, there is no need for you to be sitting at the same
+ machine you are typing commands to. You can sit at one computer, run a client which makes a network connection
+to the other computer (The server) and send these commands and responses over the network. 
+With SSH, once the network connection is stablished, all the traffic travels encrypted through the network. SSH carries 
+your commands from the client to the server, and carries the server's responses back to you.
 
 ##OpenSSH
-[OpenSSH](https://www.openssh.com/ "OpenSSH") is a fork of the original project *free ssh 1.2.12* release from 
+[OpenSSH](https://www.openssh.com/ "OpenSSH") is a fork of the original project *free ssh 1.2.12 release* from 
 Tatu Ylönen. It is the open implementation of this protocol and tools designed and maintained by the same developers 
 of the OpenBSD project. That is why it is distributed under a BSD license and follows the same principles with the 
 focus on security.
@@ -43,10 +42,3 @@ This is the list of tools that we are going to use on this guide:
 In the examples we will be using the following software versions:
 - *Operative system*: Debian GNU/Linux 8.6 Jessy (Stable).
 - *OpenSSH client*: 1:6.7p1-5+deb8u3
-
-###Steps:
-
-1. Set-up Debian mirrors in sources.list file:
-```bash
-# vi /etc/apt/sources.list
-```
