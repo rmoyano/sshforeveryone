@@ -31,9 +31,15 @@ you will need to use their owns package managers (RPM, Portage, etc.).
 4. Search for ssh client and server: 
 ```bash
    # apt-cache search ssh-client
+   devscripts - scripts to make the life of a Debian Package maintainer easier
    openssh-client - secure shell (SSH) client, for secure access to remote machines
-   openssh-server - secure shell(SSH) server, for secure access from remote machines
    ssh-askpass-gnome - interactive X program to prompt users for a passphrase for ssh-add
+
+   # apt-cache search ssh-server
+   dropbear - lightweight SSH2 server and client
+   lsh-server - Secure Shell v2 (SSH2) protocol server
+   task-ssh-server - SSH server
+   openssh-server - secure shell(SSH) server, for secure access from remote machines
 ```
 5. Install the software with their dependences:
 ```ShellSession
