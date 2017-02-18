@@ -1,6 +1,6 @@
 # Basic commands
 
-   ![Architecture.](/images/client-server.png "Client-server")
+   ![Example.](/images/solca_vps.png "Example")
 
 ## SSH 
 SSH is the main command that we are going to use for the rest of our lives. 
@@ -28,7 +28,7 @@ The basic SSH syntax is the following:
 ```
 Where rafa is the username and the rest after *@* is the remote server's URL.
 
-If you now the server's IP, we can use it instead:
+If you know the server's IP, we can use it instead:
 ```bash
    rafa@host:~/sshforeveryone$ ssh rafa@201.12.24.48
 
@@ -44,7 +44,7 @@ If you now the server's IP, we can use it instead:
 SSH server default listening port is 22 but the main problem with that is that every bot on the net is trying to 
 enter testing it. So, we have changed the listening port to 2345.
 
-We need to add the port argument *-p* in the command:
+To change the default listening port we need to add the port argument *-p* in the command:
 ```bash
    rafa@host:~/sshforeveryone$ ssh -p 2345 rafa@201.12.24.48
 ```
