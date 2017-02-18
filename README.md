@@ -2,8 +2,8 @@ SSH for everyone.
 =======
 ## SSH (Secure Shell) tutorial.
 
-###Purpose
-These work is a draft in continous development, the original idea was to serve as a guide using SSH protocol and their related tools because I could not find a comprehensive tutorial. With the passage of time and a lot a patience, I will be writing new chapters until we get a complete guide.
+###Motivation
+There are some technologies that any IT guy should handle, I think SSH is one of the mandatories. The original idea was to serve as guide using SSH protocol and their related tools because I could not find a tutorial or book that covers in details the most important topics. These work is a draft in continous development, with the passage of time and a lot a patience, I will be writing new chapters until we get a complete guide.
 
 ###How to contrib?
 - Creating a new [discussion](https://www.gitbook.com/book/rmoyano/sshforeveryone/discussions), first you need to sign-up in Gitbook o log-in using Facebook, Github, Google o Twitter account. 

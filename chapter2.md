@@ -65,7 +65,7 @@ you will need to use their owns package managers (RPM, Portage, etc.).
 ```
 
 ##Microsoft Windows
-The most famous and widely used SSH client for Windows is Putty. PuTTY is a free implementation of SSH and 
+The most famous and widely used SSH client for Windows is PuTTY. PuTTY is a free implementation of SSH and 
 Telnet for Windows. 
 
 ###Steps:
@@ -84,3 +84,5 @@ the MSI installer package, because you get all the tools that we will use:
                   
 5. Once the download has finished, execute the installer and click *Next* button an infinite number of times until 
    you complete the installation.
+
+There is another excellent tool called [mRemoteNG](https://mremoteng.org/ "mRemoteNG") that is software libre, the code is actively developed and available at [github](https://github.com/mRemoteNG/mRemoteNG "github").

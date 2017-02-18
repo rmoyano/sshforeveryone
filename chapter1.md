@@ -27,6 +27,10 @@ Last version *7.4* was released December 19, 2016.
 ##Tools
 This is the list of tools that we are going to use on this guide:
 
+    Remote operations are done using ssh, scp, and sftp.
+    Key management with ssh-add, ssh-keysign, ssh-keyscan, and ssh-keygen.
+    The service side consists of sshd, sftp-server, and ssh-agent. 
+
 - *ssh(1)* - The basic rlogin/rsh-like client program
 - *sshd(8)* - The daemon that permits you to log in
 - *ssh-agent(1)* - An authentication agent that can store private keys
@@ -40,5 +44,14 @@ This is the list of tools that we are going to use on this guide:
 
 ##Testing environment##
 In the examples we will be using the following software versions:
+Client machine
 - *Operative system*: Debian GNU/Linux 8.6 Jessie (Stable).
 - *OpenSSH client*: 1:6.7p1-5+deb8u3
+Server machine
+We are goint to use OpenBSD as server because it is the main operative
+system where OpenSSH is developed and tested.  
+2- Because I want to show interoperability
+3- Because I use this OS. 
+
+- *Operative system*: OpenBSD 6.0.
+- *OpenSSH server*: 1:6.7p1-5+deb8u3
